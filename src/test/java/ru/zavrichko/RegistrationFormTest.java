@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byId;
 import static com.codeborne.selenide.Selenide.*;
@@ -50,6 +51,16 @@ public class RegistrationFormTest {
 
         // Assertion
         $("#example-modal-sizes-title-lg").shouldBe(visible);
+        $(".table-responsive").shouldHave(text("Alex"));
+        $(".table-responsive").shouldHave(text("Smirnov"));
+        $(".table-responsive").shouldHave(text("alex.smirnov@gmail.com"));
+        $(".table-responsive").shouldHave(text("Male"));
+        $(".table-responsive").shouldHave(text("5648798798"));
+        $(".table-responsive").shouldHave(text("15 May,2014"));
+        $(".table-responsive").shouldHave(text("English"));
+        $(".table-responsive").shouldHave(text("Sports, Reading, Music"));
+        $(".table-responsive").shouldHave(text("photo.jpg"));
+        $(".table-responsive").shouldHave(text("NCR Gurgaon"));
 
     }
 
