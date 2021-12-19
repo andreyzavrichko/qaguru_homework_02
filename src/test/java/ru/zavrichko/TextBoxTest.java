@@ -19,7 +19,7 @@ public class TextBoxTest {
     }
 
     @Test
-    void RegistrationTest() {
+    void TextBoxTest() {
         // Open website
         open("https://demoqa.com/text-box");
 

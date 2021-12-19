@@ -16,7 +16,7 @@ public class CheckBoxTest {
     }
 
     @Test
-    void RegistrationTest() {
+    void CheckBoxTest() {
         // Open website
         open("https://demoqa.com/checkbox");
 

@@ -16,7 +16,7 @@ public class RadioButtonTest {
     }
 
     @Test
-    void RegistrationTest() {
+    void RadioButtonTest() {
         // Open website
         open("https://demoqa.com/radio-button");
 
