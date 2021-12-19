@@ -21,9 +21,9 @@ public class CheckBoxTest {
         open("https://demoqa.com/checkbox");
 
         // Find Element and Set value
-        $("#tree-node-home").click();
+        $(".rct-checkbox").click();
 
-
+        $("#result").shouldHave(text("You have selected :"));
 
     }
 }
